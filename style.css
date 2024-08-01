@@ -68,8 +68,14 @@ select {
     border: 1px solid #3030304d;
     border-radius: 5px;
     width: 150px;
-    padding: 8px 12px 9px;
-    background-image: url(./assets/ep_arrow-down.svg) right no-repeat;
+    padding: 8px 10px 9px 12px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url(./assets/ep_arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 90%;
+
         
 }
 
@@ -80,7 +86,7 @@ select {
     margin-bottom: 25px;
 }
 
-.frameworks-list {
+.skills-list {
     /* Стили для маркированного списка во второй секции */
     list-style-image: url("./assets/solar_map-arrow-up-bold.svg");
     padding-left: 20px;
@@ -92,7 +98,7 @@ select {
     /* Стили для нумерованного списка во второй секции */
     font-weight: 400;
     font-size: 16px;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .label {
@@ -135,21 +141,23 @@ table {
     /* Стили для таблицы */
     width: 300px;
     height: 196px;
-    border-collapse: collapse;}
+    border-collapse: collapse;
+    font-size: 14px;}
+    
     
 th, td {
     /* Стили для ячеек таблицы */
     border: 1px solid #95a1bb;
     font-weight: 400;
-    font-size: 14px;
     text-align: left;
-    padding: 11px 15px;
     height: 40px;
+    padding: 12px 15px;
     }
 
 .th-title {
 font-weight: 700;
 font-size: 14px;
+padding: 12px 15px;
 }
 
 
